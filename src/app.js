@@ -18,7 +18,7 @@ class App {
     this.server.use(express.json());
     // static: servir arquivos que podem ser acessados diretamente pelo navegador
     this.server.use(
-      'files',
+      '/files',
       express.static(path.resolve(__dirname, '..', 'tmp', 'uploads'))
     );
   }
