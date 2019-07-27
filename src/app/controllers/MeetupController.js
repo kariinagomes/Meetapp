@@ -6,7 +6,7 @@ import User from '../models/User';
 import File from '../models/File';
 
 class MeetupController {
-  // Listar meetups organizados pelo usuário logado
+  // Listar meetups organizados pelo usuário logado por filtro de data
   async index(req, res) {
     const page = req.query.page || 1;
 
